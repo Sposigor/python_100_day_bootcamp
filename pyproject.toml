@@ -8,6 +8,7 @@ authors = ["Igor Esposito <sposigor@gmail.com>"]
 python = "^3.9"
 pylint = "^2.11.1"
 replit = "^3.2.4"
+tqdm = "^4.62.3"
 
 [tool.poetry.dev-dependencies]
 
