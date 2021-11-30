@@ -1,3 +1,5 @@
+''' Iniciando com orientação a objetos '''
+
 from turtle import Turtle, Screen
 import outro_modulo
 print(outro_modulo.variavel)
