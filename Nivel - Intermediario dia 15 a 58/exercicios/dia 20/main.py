@@ -3,9 +3,13 @@
 from turtle import Screen
 from time import sleep
 from cobra import Cobra
+from bolinha import Bolinha
+from pontuacao import Pontuação
 
 cobra = Cobra()
+bolinha = Bolinha()
 jogo_esta_online = True
+Pontos = Pontuação()
 
 # Objeto da classe Screen
 cenario = Screen()
@@ -25,13 +29,22 @@ while jogo_esta_online:
     sleep(0.1)
     cobra.mover_cobra()
 
+    # detectar colisão
+    if cobra.head.distance(bolinha) < 15:
+        bolinha.atualizar()
+        Pontos.adicionar_ponto()
+        cobra.extender_cobrinha()
 
+    # detectar colisão com a parede
+    if cobra.head.xcor() > 285 or cobra.head.xcor() < -285 or cobra.head.ycor() > 285 or cobra.head.ycor() < -285:
+        jogo_esta_online = False
+        Pontos.gameover()
 
-
-
-
-
-
+    # detectar colisão com a própria cobra
+    for parte in cobra.cobra[1:]:
+        if cobra.head.distance(parte) < 10:
+            jogo_esta_online = False
+            Pontos.gameover()
 
 
 

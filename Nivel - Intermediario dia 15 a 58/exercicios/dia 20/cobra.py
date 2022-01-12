@@ -2,7 +2,7 @@
 
 from turtle import Turtle
 
-posição_inicial_x = [0, -20, -40]
+posição_inicial_x = [(0, 0), (0,-20), (0,-40)]
 andar_para_frente = 20
 alto = 90
 baixo = 270
@@ -15,19 +15,26 @@ class Cobra:
     def __init__(self):
         ''' Inicialização da classe '''
         self.cobra = []
-        self.cobrinha()
+        self.cria_cobrinha()
         self.head = self.cobra[0]
 
-    def cobrinha(self):
+    def cria_cobrinha(self):
         ''' cobrinha do jogo '''
-        cobrinha = Turtle()
-        posição_inicial = posição_inicial_x
-        for i in range(0, 3):
-            cobrinha = Turtle('square')
-            cobrinha.color("white")
-            cobrinha.penup()
-            cobrinha.goto(x=posição_inicial[i], y=0)
-            self.cobra.append(cobrinha)
+        for posição in posição_inicial_x:
+            self.adicionar_parte(posição)
+
+
+    def adicionar_parte(self, posição):
+        ''' adiciona parte da cobra '''
+        nova_parte = Turtle("square")
+        nova_parte.color("white")
+        nova_parte.penup()
+        nova_parte.goto(posição)
+        self.cobra.append(nova_parte)
+
+    def extender_cobrinha(self):
+        ''' Aumenta o tamanho da cobrinha quando ela começa a comer '''
+        self.adicionar_parte(self.cobra[-1].position())
 
     def mover_cobra(self):
         ''' Movimenta a cobrinha automatico'''
