@@ -24,5 +24,3 @@ with open(carta, 'r', encoding='utf-8') as arquivo_carta:
         nova_carta = carta_inicial.replace(troca_nome, nomes_stripped)
         with open(f"{resultado}\{nomes_stripped}.txt", 'w', encoding='utf-8') as arquivo_novo:
             arquivo_novo.write(nova_carta)
-
-
