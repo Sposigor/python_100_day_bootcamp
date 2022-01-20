@@ -69,7 +69,7 @@ def cronometro(contagem):
             check_icone += "✔"
         check.config(text=check_icone)
 
-# ---------------------------- UI SET""UP ------------------------------- #
+# ---------------------------- UI SETUP ------------------------------- #
 
 # Configuração da janela principal
 janela = Tk()
