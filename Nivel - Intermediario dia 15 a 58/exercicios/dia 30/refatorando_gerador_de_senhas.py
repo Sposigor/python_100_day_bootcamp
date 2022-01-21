@@ -71,7 +71,7 @@ def salvar_senha():
                 site_texto.delete(0, END)
                 senha_texto.delete(0, END)
 
-# ---------------------------- UI SETUP ------------------------------- #
+# ---------------------------- Encontra a senha salva no .json ------------------------------- #
 def encontrar_senha_salva():
     ''' Encontrar senha salva '''
     site = site_texto.get()
