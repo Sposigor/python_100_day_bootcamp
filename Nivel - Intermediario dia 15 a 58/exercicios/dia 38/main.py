@@ -1,14 +1,15 @@
 ''' Exercicio dia 38 '''
 
-import requests
 from datetime import datetime
+import requests
 
 
-id = '974cc297'
+
+app_id = '974cc297'
 api_key = '8d9bf74f139716b87012f9ea725b124f'
 
 headers = {
-    'x-app-id': id,
+    'x-app-id': app_id,
     'x-app-key': api_key,
 }
 
