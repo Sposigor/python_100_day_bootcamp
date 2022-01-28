@@ -182,6 +182,14 @@ optional = false
 python-versions = ">=3.6"
 
 [[package]]
+name = "geckodriver-autoinstaller"
+version = "0.1.0"
+description = "Automatically install geckodriver that supports the currently installed version of chrome."
+category = "main"
+optional = false
+python-versions = ">=3"
+
+[[package]]
 name = "h11"
 version = "0.13.0"
 description = "A pure-Python, bring-your-own-I/O implementation of HTTP/1.1"
@@ -669,7 +677,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "38f98fcac92cdbeb876f2e6f3ff5a01ccbc3905eecf6da5e8467ec2b68f03536"
+content-hash = "50147e62bdb2b4fe00ac1bf1df57b5579f6afd4736f5d9b1797e95662a089e56"
 
 [metadata.files]
 aiohttp = [
@@ -937,6 +945,10 @@ frozenlist = [
     {file = "frozenlist-1.2.0-cp39-cp39-win32.whl", hash = "sha256:83334e84a290a158c0c4cc4d22e8c7cfe0bba5b76d37f1c2509dabd22acafe15"},
     {file = "frozenlist-1.2.0-cp39-cp39-win_amd64.whl", hash = "sha256:735f386ec522e384f511614c01d2ef9cf799f051353876b4c6fb93ef67a6d1ee"},
     {file = "frozenlist-1.2.0.tar.gz", hash = "sha256:68201be60ac56aff972dc18085800b6ee07973c49103a8aba669dee3d71079de"},
+]
+geckodriver-autoinstaller = [
+    {file = "geckodriver-autoinstaller-0.1.0.tar.gz", hash = "sha256:08953404903750a7e0905913d86eab13849c75ed61eb281c45697d9f5b5e2eb2"},
+    {file = "geckodriver_autoinstaller-0.1.0-py3-none-any.whl", hash = "sha256:609236aab9c111af10685cab1ab5551ce86b471101b6add34642545bc7e84bdc"},
 ]
 h11 = [
     {file = "h11-0.13.0-py3-none-any.whl", hash = "sha256:8ddd78563b633ca55346c8cd41ec0af27d3c79931828beffb46ce70a379e7442"},
