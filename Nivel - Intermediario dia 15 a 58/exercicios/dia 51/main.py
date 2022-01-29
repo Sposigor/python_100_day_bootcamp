@@ -2,8 +2,9 @@
 Exercicio do dia 51
 
 """
+from time import sleep
 from teste_internet import TesteInternet
-import time
+
 
 # Variaveis
 NET_DOWN_PROMETIDA = 300
@@ -13,7 +14,7 @@ robozinho = TesteInternet()
 robozinho.pegar_velocidade_net()
 
 
-time.sleep(10)
+sleep(10)
 
 if NET_DOWN_PROMETIDA > robozinho.baixar or NET_UP_PROMETIDA < robozinho.subir:
     robozinho.envinado_messagem_twiter()
