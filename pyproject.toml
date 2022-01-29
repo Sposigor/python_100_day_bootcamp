@@ -18,6 +18,7 @@ spotipy = "^2.19.0"
 lxml = "^4.7.1"
 selenium = "^4.1.0"
 geckodriver-autoinstaller = "^0.1.0"
+pynput = "^1.7.6"
 
 [tool.poetry.dev-dependencies]
 
