@@ -19,6 +19,7 @@ lxml = "^4.7.1"
 selenium = "^4.1.0"
 geckodriver-autoinstaller = "^0.1.0"
 pynput = "^1.7.6"
+Flask = "^2.0.2"
 
 [tool.poetry.dev-dependencies]
 
