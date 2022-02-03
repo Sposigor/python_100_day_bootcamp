@@ -3,3 +3,4 @@
 __pycache__
 token.txt
 geckodriver.log
+.ipynb_checkpoints
