@@ -1,5 +1,5 @@
 * linguist-vendored
-*.ipynb linguist-documentation=false
+*.ipynb linguist-detectable=false
 *.css linguist-detectable=true
 *.java linguist-detectable=false
 *.python linguist-detectable=true 
